@@ -1,6 +1,6 @@
 <?php
 
-use App\Distributeur;
+use App\Context\Distributeur;
 
     require_once(__DIR__.'/libraries/autoload.php');
 
