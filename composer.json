@@ -1,0 +1,11 @@
+{
+    "name": "bonnafous/state",
+    "description": "Mise en place du pattern état par l'exemple d'un distributeur de bonbons (états / transitions)",
+    "authors": [
+        {
+            "name": "François Bonnafous",
+            "email": "francois.bonnafous@hotmail.fr"
+        }
+    ],
+    "require": {}
+}
