@@ -7,28 +7,14 @@ use App\Context\Distributeur;
     echo "Distributeur de bonbons<br>";
 
     $distributeur = new Distributeur(5);
-    $distributeur->insererPiece();      
+
+    $distributeur->insererPiece();
     $distributeur->tournerPoignee();
 
-    echo "<br>";
-    $distributeur->insererPiece();      
-    $distributeur->ejecterPiece();
+    $distributeur->insererPiece();
     $distributeur->tournerPoignee();
 
-    echo "<br>";
-    $distributeur->insererPiece();      
-    $distributeur->tournerPoignee();
-    $distributeur->insererPiece();      
-    $distributeur->tournerPoignee();
-    $distributeur->ejecterPiece();
-
-    echo "<br>";
-    $distributeur->insererPiece();      
-    $distributeur->insererPiece();      
-    $distributeur->tournerPoignee();
-    $distributeur->insererPiece();      
-    $distributeur->tournerPoignee();
-    $distributeur->insererPiece();      
+    $distributeur->insererPiece();
     $distributeur->tournerPoignee();
 
 ?>

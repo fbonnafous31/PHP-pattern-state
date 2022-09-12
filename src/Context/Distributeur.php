@@ -3,10 +3,11 @@
     namespace App\Context;
 
 use App\State\Etat;
+use App\State\EtatVendu;
 use App\State\EtatAPiece;
 use App\State\EtatEpuise;
 use App\State\EtatSansPiece;
-use App\State\EtatVendu;
+use App\State\EtatGagnant;
 
     class Distributeur {
 
@@ -14,6 +15,7 @@ use App\State\EtatVendu;
         public Etat $etatSansPiece;
         public Etat $etatAPiece;
         public Etat $etatVendu;
+        public Etat $etatGagnant;
         
         public $nombre = 0;
 
@@ -22,6 +24,7 @@ use App\State\EtatVendu;
             $this->etatSansPiece = new EtatSansPiece($this);
             $this->etatAPiece    = new EtatAPiece($this);
             $this->etatVendu     = new EtatVendu($this);
+            $this->etatGagnant   = new EtatGagnant($this);
             $this->nombre        = $nombreBonbons;
 
             if ($nombreBonbons > 0) {
@@ -67,6 +70,10 @@ use App\State\EtatVendu;
 
         public function getEtatVendu(): Etat {
             return $this->etatVendu;
+        }
+
+        public function getEtatGagnant(): Etat {
+            return $this->etatGagnant;
         }
 
         public function getNombre(): int {
